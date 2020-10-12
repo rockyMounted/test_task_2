@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="content-item">
+        <input onchange="onUpdate()" class="content-radio-btn" type="radio" id="one" name="radioButton" value="1" data-price="13">
+        <label class="content-item-label" for="one" value="1">license plan #1
+          <span class="content-item-text">$13 per license</span>
+        </label>
+      </div>
+      <div class="content-item">
+        <input onchange="onUpdate()" class="content-radio-btn" type="radio" id="two" name="radioButton" value="2" data-price="22">
+        <label class="content-item-label" for="two" value="2">license plan #2
+          <span class="content-item-text">$22 per license</span>
+        </label>
+      </div>
+      <div class="content-item">
+        <input onchange="onUpdate()" class="content-radio-btn" type="radio" id="three" name="radioButton" value="3" data-price="34">
+        <label class="content-item-label" for="three" value="3">license plan #3
+          <span class="content-item-text">$34 per license</span>
+        </label>
+      </div>
+    </div>
+    <div class="content-select">
+      <label class="content-select-text" for="select-number">Number of licenses:</label>
+      <select class="content-select-number" name="select-number" id="selectNum" onchange="onUpdate()">
+        <option value="10" >10</option>
+        <option value="15" >15</option>
+        <option value="20" >20</option>
+        <option value="25" >25</option>
+      </select>
+    </div>
+    <div class="content-total">
+      <span class="content-total-title">Total: <span class="content-total-number">$0<sup class="content-total-number-sup">us</sup></span></span>
+    </div>
+    <div class="content-button">
+      <a href="#" class="content-button-buy">Buy now</a>
+    </div>
+    <div class="content-select-title">
+      <span>Selected plan: </span>
+    </div>
+  </div>
+
+  <script src="script/script.js"></script>
+</body>
+</html>

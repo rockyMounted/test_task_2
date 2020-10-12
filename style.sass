@@ -1,0 +1,153 @@
+@font-face
+  font-family: "BebasBold"
+  src: url("../fonts/BebasBold/BebasBold.eot");
+  src: url("../fonts/BebasBold/BebasBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/BebasBold/BebasBold.woff") format("woff"),
+  url("../fonts/BebasBold/BebasBold.ttf") format("truetype")
+  font-style: normal
+  font-weight: normal
+
+.container
+  width: 35%
+  height: auto
+  margin: 0 auto
+  border: 10px solid #ebebeb
+  background-color: #f8f8f8
+  position: relative
+
+.content
+  padding: 15px 15px 0px 15px
+  margin-top: 20px
+  &-item
+    position: relative
+    margin-bottom: 40px
+    cursor: pointer
+    &-label:hover
+      background-color: rgb(235, 244, 247)
+      border: 1px solid #e3eff3
+    &-label
+      padding: 20px 280px 20px 50px
+      text-transform: uppercase
+      font-family: 'BebasBold'
+      color: #929495
+      font-size: 20px
+      cursor: pointer
+      border: 1px solid transparent
+      margin-bottom: 10px
+      &::before
+        content: ''
+        display: block
+        width: 16px
+        height: 16px
+        border: 3px solid #34648e
+        background-color: transparent
+        border-radius: 50%
+        position: absolute
+        top: -2px
+        left: 18px
+        z-index: 1
+      &::after
+        content: ''
+        display: block
+        width: 10px
+        height: 10px
+        background-color:#0294bf
+        border-radius: 50%
+        position: absolute
+        top: 4px
+        left: 24px
+        opacity: 0
+        z-index: 2
+    &-text
+      position: absolute
+      right: 20px
+      color: #929495
+      font-size: 14px
+      text-transform: none
+      font-family: sans-serif
+  &-select
+    padding: 20px
+    text-align: center
+    border-top: 1px solid #929495
+    border-bottom: 1px solid #929495
+    width: 85%
+    margin: 0 auto
+    &-text
+      font-size: 12px
+      font-family: sans-serif
+    &-number
+      display: inline-block
+      font-size: 12px
+      font-family: sans-serif
+      width: 55px
+      height: 30px
+      border: 2px solid #66a5bc
+      border-radius: 2px
+      background-color: #ffff
+      background-image: url(../img/icon.png)
+      background-repeat: no-repeat, repeat;
+      background-position: right  top 50%, 0 0;
+      background-size: 20px, 100%;
+      appearance: none
+      outline: none
+      padding-left: 5px
+      text-align-last: 10px
+      margin-right: 95px
+      &::-ms-expand
+        display: none
+  &-total
+    padding-top: 35px
+    text-align: center
+    position: relative
+    font-size: 24px
+    text-transform: uppercase
+    font-family: 'BebasBold'
+    color: #929495
+    margin: 0 auto
+    &-title
+      position: relative
+    &-number
+      color: #66a5bc
+      &-sup
+        font-size: 10px
+  &-button
+    padding-top: 25px
+    text-align: center
+    cursor: pointer
+    &-buy
+      text-transform: uppercase
+      font-weight: 600
+      font-size: 12px
+      font-family: sans-serif
+      padding: 15px 50px 15px 50px
+      color: #fff
+      background-color: #33a845
+      border-radius: 30px
+      width: 200px
+      margin: 0 auto
+      text-decoration: none
+      &:hover
+        box-shadow: 0px 0px 10px 0px rgba(51,168,69,0.52)
+
+  &-select-title
+    padding: 40px
+    text-align: center
+    color: #66a5bc
+    font-family: sans-serif
+    font-size: 16px
+    font-weight: 200
+
+.radio
+  position: relative
+  margin-bottom: 10px
+
+.content-radio-btn
+  display: none
+  z-index: 3
+
+.content-radio-btn:checked + .content-item-label::before
+  background-color: transparent
+
+.content-radio-btn:checked + .content-item-label::after
+  opacity: 1
+
